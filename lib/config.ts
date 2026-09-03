@@ -1,7 +1,7 @@
-// TODO: reemplazar por el número real de WhatsApp Business.
+// TODO: reemplazar por el número de WhatsApp Business definitivo de la empresa.
 // Formato: 549 + característica sin 0 + número sin 15 (todo junto, sin espacios ni "+").
-// Ejemplo CABA: 5491122334455
-export const WHATSAPP_NUMBER = "5491100000000";
+// Por ahora usa el número personal de Nicolás como temporal.
+export const WHATSAPP_NUMBER = "5491169949939";
 
 export const WHATSAPP_DEFAULT_MESSAGE =
   "Hola! Quiero pedir un presupuesto para colocación de piso flotante.";
