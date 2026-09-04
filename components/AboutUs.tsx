@@ -12,7 +12,7 @@ const FOUNDERS = [
   },
   {
     icon: HardHat,
-    name: "Su hermano",
+    name: "Marcelo Gutiérrez",
     role: "Maestro mayor de obra",
     bio: "A cargo de la parte técnica: visita de obra en los casos que lo requieren, selección de colocadores y control de calidad de cada instalación.",
   },
