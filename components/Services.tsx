@@ -14,6 +14,7 @@ import type { LucideIcon } from "lucide-react";
 type Service = {
   icon: LucideIcon;
   image: string;
+  alt: string;
   title: string;
   text: string;
 };
@@ -22,24 +23,28 @@ const FLOOR_SERVICES: Service[] = [
   {
     icon: Layers,
     image: "/images/services/laminado.png",
+    alt: "Piso laminado de madera clara instalado en un ambiente",
     title: "Pisos laminados",
     text: "Resistentes y con terminación de madera natural, ideales para living y dormitorios.",
   },
   {
     icon: SquareStack,
     image: "/images/services/vinilico.png",
+    alt: "Piso vinílico SPC click resistente al agua, con gotas sobre la superficie",
     title: "Pisos vinílicos SPC / click",
     text: "100% resistentes al agua, aptos para cocina y baño, con instalación flotante.",
   },
   {
     icon: Ruler,
     image: "/images/services/zocalos.png",
+    alt: "Zócalo blanco de terminación en la unión entre pared y piso",
     title: "Zócalos y perfiles",
     text: "Terminación prolija en cada ambiente, con perfiles de unión y guardacantos a medida.",
   },
   {
     icon: Wrench,
     image: "/images/services/nivelacion.png",
+    alt: "Nivelación de contrapiso con pasta autonivelante antes de instalar el piso",
     title: "Nivelación de contrapiso",
     text: "Cuando el piso existente lo necesita, nivelamos antes de instalar para un resultado sin fallas.",
   },
@@ -49,24 +54,28 @@ const CEILING_SERVICES: Service[] = [
   {
     icon: PanelTop,
     image: "/images/ceilings/liso.png",
+    alt: "Techo revestido con paneles PVC lisos color blanco",
     title: "Paneles PVC lisos",
     text: "Terminación blanca prolija, 100% resistente a la humedad: ideal para baños, cocinas y lavaderos.",
   },
   {
     icon: TreePine,
     image: "/images/ceilings/madera.png",
+    alt: "Techo revestido con paneles PVC símil madera clara",
     title: "Paneles PVC símil madera",
     text: "El look cálido de la madera, sin su mantenimiento ni el riesgo de humedad.",
   },
   {
     icon: Thermometer,
     image: "/images/ceilings/aislacion.png",
+    alt: "Detalle de la estructura interna aislante de un panel de PVC para techo",
     title: "Aislación térmica y acústica",
     text: "La estructura interna del panel mejora el aislamiento del ambiente frente al techo original.",
   },
   {
     icon: Hammer,
     image: "/images/ceilings/instalacion.png",
+    alt: "Instalación de un panel de PVC en un techo, sin demolición",
     title: "Instalación sin demolición",
     text: "Se coloca sobre el techo existente con una estructura liviana, sin escombros ni obra húmeda.",
   },
@@ -75,7 +84,7 @@ const CEILING_SERVICES: Service[] = [
 function ServiceGrid({ services }: { services: Service[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      {services.map(({ icon: Icon, image, title, text }) => (
+      {services.map(({ icon: Icon, image, alt, title, text }) => (
         <div
           key={title}
           className="overflow-hidden rounded-2xl border border-walnut-200 bg-white shadow-sm"
@@ -83,7 +92,7 @@ function ServiceGrid({ services }: { services: Service[] }) {
           <div className="relative aspect-[4/3]">
             <Image
               src={image}
-              alt={title}
+              alt={alt}
               fill
               sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
               className="object-cover"

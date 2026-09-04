@@ -1,4 +1,5 @@
 import { Clock3, FileText, ShieldCheck, Truck } from "lucide-react";
+import { FEATURES } from "@/lib/config";
 
 const BADGES = [
   {
@@ -13,13 +14,17 @@ const BADGES = [
   },
   {
     icon: FileText,
-    title: "Presupuesto y factura",
-    text: "Todo por escrito: presupuesto en PDF y factura, nada de WhatsApp suelto.",
+    title: FEATURES.facturaAFIP ? "Presupuesto y factura" : "Presupuesto por escrito",
+    text: FEATURES.facturaAFIP
+      ? "Todo por escrito: presupuesto en PDF y factura, nada de WhatsApp suelto."
+      : "Presupuesto en PDF con el detalle de la obra, nada de WhatsApp suelto.",
   },
   {
     icon: ShieldCheck,
-    title: "Garantía y seguro",
-    text: "Garantía por escrito y seguro de responsabilidad civil para entrar a cualquier edificio.",
+    title: FEATURES.seguroResponsabilidadCivil ? "Garantía y seguro" : "Garantía por escrito",
+    text: FEATURES.seguroResponsabilidadCivil
+      ? "Garantía por escrito y seguro de responsabilidad civil para entrar a cualquier edificio."
+      : "Garantía por escrito sobre cada instalación que realizamos.",
   },
 ];
 

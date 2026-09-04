@@ -1,4 +1,4 @@
-import { buildWhatsAppLink } from "@/lib/config";
+import WhatsAppLink from "@/components/WhatsAppLink";
 
 export default function CTASection() {
   return (
@@ -10,14 +10,12 @@ export default function CTASection() {
         Contanos los metros cuadrados y el estado del piso actual, y te respondemos con tu
         presupuesto en el día.
       </p>
-      <a
-        href={buildWhatsAppLink()}
-        target="_blank"
-        rel="noopener noreferrer"
+      <WhatsAppLink
+        origin="footer"
         className="mt-8 inline-block rounded-full bg-walnut-700 px-10 py-4 text-base font-semibold text-white shadow-lg shadow-walnut-700/20 transition hover:bg-walnut-800"
       >
         Escribinos por WhatsApp
-      </a>
+      </WhatsAppLink>
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { buildWhatsAppLink, SITE } from "@/lib/config";
+import { SITE } from "@/lib/config";
+import WhatsAppLink from "@/components/WhatsAppLink";
 
 export default function Hero() {
   return (
@@ -18,14 +19,12 @@ export default function Hero() {
             escrito.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a
-              href={buildWhatsAppLink()}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppLink
+              origin="hero"
               className="whitespace-nowrap rounded-full bg-walnut-700 px-8 py-3 text-center text-base font-semibold text-white shadow-lg shadow-walnut-700/20 transition hover:bg-walnut-800"
             >
               Pedí tu presupuesto por WhatsApp
-            </a>
+            </WhatsAppLink>
             <a
               href="#como-trabajamos"
               className="whitespace-nowrap rounded-full border border-walnut-300 px-8 py-3 text-center text-base font-semibold text-walnut-800 transition hover:bg-walnut-200/60"
