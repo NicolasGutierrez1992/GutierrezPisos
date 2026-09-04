@@ -57,8 +57,8 @@ export const ANALYTICS = {
 export const PRICING = {
   isPlaceholder: true,
   perM2: {
-    laminado: { label: "Piso laminado", min: 30000, max: 48000 },
-    vinilico: { label: "Piso vinílico SPC", min: 32000, max: 55000 },
+    laminado: { label: "Piso laminado", min: 50000, max: 70000 },
+    vinilico: { label: "Piso vinílico SPC", min: 45000, max: 65000 },
   },
   nivelacionPerM2: 6000,
 };
