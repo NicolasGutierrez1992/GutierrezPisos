@@ -89,13 +89,13 @@ export default function Cotizador() {
                 <p className="mt-1 text-3xl font-bold text-walnut-900">
                   {formatARS(totalMin)} – {formatARS(totalMax)}
                 </p>
-                <p className="mt-2 text-xs text-walnut-500">
+                <p className="mt-2 text-xs text-walnut-600">
                   Precio orientativo, sujeto a confirmación según el estado real del piso.
                   {PRICING.isPlaceholder && " Valores de ejemplo, a confirmar."}
                 </p>
               </div>
             ) : (
-              <p className="text-center text-sm text-walnut-500">
+              <p className="text-center text-sm text-walnut-600">
                 Ingresá los metros cuadrados para ver un estimado.
               </p>
             )}

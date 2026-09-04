@@ -46,7 +46,7 @@ export default function BeforeAfter() {
             className="absolute inset-0 h-full w-full cursor-ew-resize opacity-0"
           />
         </div>
-        <p className="mt-3 text-center text-xs text-walnut-500">
+        <p className="mt-3 text-center text-xs text-walnut-600">
           Imágenes de ejemplo — se reemplazan por fotos reales de obra apenas estén disponibles.
         </p>
       </div>

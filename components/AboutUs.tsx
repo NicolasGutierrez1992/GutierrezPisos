@@ -34,7 +34,7 @@ export default function AboutUs() {
             </div>
             <div>
               <p className="font-semibold text-walnut-900">{name}</p>
-              <p className="text-sm font-medium text-walnut-500">{role}</p>
+              <p className="text-sm font-medium text-walnut-600">{role}</p>
               <p className="mt-2 text-sm text-walnut-600">{bio}</p>
             </div>
           </div>
