@@ -1,4 +1,10 @@
-export type ConversionOrigin = "hero" | "header" | "cotizador" | "footer" | "boton_flotante";
+export type ConversionOrigin =
+  | "hero"
+  | "header"
+  | "cotizador"
+  | "servicios"
+  | "footer"
+  | "boton_flotante";
 
 declare global {
   interface Window {
