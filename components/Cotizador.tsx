@@ -16,7 +16,7 @@ function formatARS(value: number) {
 
 export default function Cotizador() {
   const [m2, setM2] = useState("");
-  const [product, setProduct] = useState<ProductKey>("laminado");
+  const [product, setProduct] = useState<ProductKey>("vinilicoClick");
   const [nivelacion, setNivelacion] = useState(false);
 
   const m2Num = Number(m2) || 0;

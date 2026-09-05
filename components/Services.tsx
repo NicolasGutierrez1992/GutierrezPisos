@@ -22,17 +22,17 @@ type Service = {
 const FLOOR_SERVICES: Service[] = [
   {
     icon: Layers,
-    image: "/images/services/laminado.png",
-    alt: "Piso laminado de madera clara instalado en un ambiente",
-    title: "Pisos laminados",
-    text: "Resistentes y con terminación de madera natural, ideales para living y dormitorios.",
+    image: "/images/services/vinilico-click.png",
+    alt: "Piso vinílico click gris claro instalado en un ambiente luminoso",
+    title: "Piso vinílico click",
+    text: "Terminación símil madera, instalación flotante rápida y muy buena resistencia a la humedad diaria.",
   },
   {
     icon: SquareStack,
     image: "/images/services/vinilico.png",
-    alt: "Piso vinílico SPC click resistente al agua, con gotas sobre la superficie",
-    title: "Pisos vinílicos SPC / click",
-    text: "100% resistentes al agua, aptos para cocina y baño, con instalación flotante.",
+    alt: "Piso vinílico SPC rígido resistente al agua, con gotas sobre la superficie",
+    title: "Piso vinílico SPC rígido",
+    text: "100% resistente al agua, ideal para cocina y baño, con núcleo rígido de mayor durabilidad.",
   },
   {
     icon: Ruler,
@@ -119,7 +119,7 @@ export default function Services() {
           resto.
         </p>
 
-        <h3 className="mt-12 text-xl font-semibold text-walnut-900">Pisos flotantes y vinílicos</h3>
+        <h3 className="mt-12 text-xl font-semibold text-walnut-900">Pisos flotantes de PVC y vinílico</h3>
         <div className="mt-6">
           <ServiceGrid services={FLOOR_SERVICES} />
         </div>

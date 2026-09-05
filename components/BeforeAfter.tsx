@@ -17,7 +17,7 @@ export default function BeforeAfter() {
         <div className="relative mt-8 aspect-video w-full select-none overflow-hidden rounded-3xl border border-walnut-200 shadow-xl">
           <Image
             src="/images/before-after/despues.png"
-            alt="Ambiente con piso laminado nuevo instalado"
+            alt="Ambiente con piso vinílico nuevo instalado"
             fill
             sizes="(min-width: 1024px) 800px, 90vw"
             className="object-cover"

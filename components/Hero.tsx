@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="relative mx-auto grid max-w-6xl gap-10 px-6 py-16 md:py-20 lg:grid-cols-2 lg:items-center lg:py-28">
         <div className="flex flex-col items-start gap-6">
           <span className="rounded-full bg-walnut-700/10 px-4 py-1 text-sm font-semibold text-walnut-800">
-            Colocación de pisos flotantes en {SITE.zone}
+            Instalación de pisos PVC y vinílicos en {SITE.zone}
           </span>
           <h1 className="max-w-xl text-4xl font-bold leading-tight text-walnut-900 md:text-5xl">
             Piso nuevo en un día, sin romper nada.

@@ -18,7 +18,7 @@ const FAQS = [
   },
   {
     q: "¿Aguanta agua y mascotas?",
-    a: "El piso vinílico SPC es 100% resistente al agua, ideal para cocinas, baños y hogares con mascotas. El laminado tolera humedad ocasional pero no encharques.",
+    a: "El piso vinílico SPC rígido es 100% resistente al agua, ideal para cocinas, baños y hogares con mascotas. El vinílico click también resiste muy bien la humedad diaria de uso normal.",
   },
   {
     q: "¿Y si el piso está desnivelado?",

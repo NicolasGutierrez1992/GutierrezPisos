@@ -13,9 +13,9 @@ const fraunces = Fraunces({
   weight: ["500", "600"],
 });
 
-const TITLE = "Gutiérrez Pisos | Colocación de pisos flotantes en CABA";
+const TITLE = "Gutiérrez Pisos | Instalación de pisos PVC y vinílicos en CABA";
 const DESCRIPTION =
-  "Presupuesto en el día, garantía por escrito y material que llega a tu casa antes de la obra. Colocación profesional de pisos flotantes, vinílicos y techos en PVC en CABA.";
+  "Presupuesto en el día, garantía por escrito y material que llega a tu casa antes de la obra. Instalación profesional de pisos flotantes PVC/vinílicos y techos en PVC en CABA.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
